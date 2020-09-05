@@ -9,5 +9,16 @@
 .header-wrap {
   width: 1170px;
   max-width: calc(100%-20px);
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 75px;
+}
+
+.header-wrap .header__logo img .header-title {
+  display: inline-block;
+}
+
+.header__logo img {
+  width: 128px;
 }
 /*# sourceMappingURL=style.css.map */

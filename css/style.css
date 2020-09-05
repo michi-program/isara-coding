@@ -1,1 +1,13 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+}
+
+.header-wrap {
+  width: 1170px;
+  max-width: calc(100%-20px);
+}
+/*# sourceMappingURL=style.css.map */

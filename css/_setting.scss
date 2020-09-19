@@ -1,0 +1,28 @@
+//////////////////////////////////////////////////
+// Settings
+//
+
+// fonts
+$font-jp: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ",
+  "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial",
+  sans-serif;
+$font-en: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+// colors
+$color-txt: #fff;
+// sns
+$color-facebook: #3b5998;
+$color-twitter: #55acee;
+$color-google: #dd4b39;
+$color-hatena: #008fde;
+$color-line: #00b900;
+
+// breakpoints
+$breakpoints: (
+  "xxs": "375px",
+  "xs": "576px",
+  "sm": "768px",
+  "md": "1024px",
+  "lg": "1280px",
+  "xl": "1920px",
+) !default;

@@ -1,0 +1,93 @@
+.about {
+  padding: 0 0 40px 0;
+  background-color: #fef5e0;
+  text-align: center;
+}
+
+.about-icon {
+  position: relative;
+  top: -40px;
+}
+
+.about-icon__cycle {
+  background-color: $color-main;
+  height: 80px;
+  width: 80px;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  line-height: 80px;
+  color: $color-txt;
+  border-radius: 50%;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+}
+
+.about-intitle {
+  width: 860px;
+  position: relative;
+  margin: 0 auto;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-top: 4px solid $color-main;
+    border-left: 4px solid $color-main;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-bottom: 4px solid $color-main;
+    border-right: 4px solid $color-main;
+  }
+}
+
+.about-tit__txt {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.about-txt {
+  font-weight: 600;
+  font-size: 2.0rem;
+  margin-top: 40px;
+}
+
+.about-box {
+  margin: 30px auto;
+  width: 1170px;
+  padding: 30px;
+  background-color: $color-txt;
+  border: 2px solid $color-main;
+  border-radius: 5px;
+}
+
+.box-txt {
+  font-weight: 600;
+  font-size: 2.0rem;
+}
+
+.box {
+  display: inline-block;
+  padding: 10px;
+  img {
+  width: auto;
+  height: auto;
+  }
+}
+
+.inbox-txt {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 5px;
+}

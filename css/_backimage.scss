@@ -1,17 +1,25 @@
 .backimage {
+  padding-top: 75px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+  display: table;
+}
+
+.backimage-row {
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .backimage-container {
   background-image: url(/image/background-image/index.jpg);
   background-size: cover;
   background-position: center;
+  width: 100%;
   height: 500px;
   display: table;
-  width: 100%;
 }
 
 .backimage-text {
@@ -21,6 +29,7 @@
   .txt {
     font-size: 2.8rem;
     font-weight: 600;
+    margin-bottom: 10px;
   }
   .backimage-logo {
     width: 317px;
@@ -31,4 +40,36 @@
 .txt-mini {
   font-size: 2.0rem;
   font-weight: 600;
+}
+
+@include media(max,lg) {
+  .backimage {
+    
+  }
+}
+
+@include media(max,sp) {
+  .backimage {
+    max-width: 920px;
+    width: 100%;
+    padding-top: 60px;
+  }
+
+  .backimage-container {
+    background-image: url(/image/background-image/mainsp.jpg);
+    height: 312px;
+  }
+
+  .backimage-text {
+    .txt {
+      margin-bottom: 0;
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+    .txt-mini {
+      margin-bottom: 0;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
 }

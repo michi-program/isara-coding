@@ -1,0 +1,94 @@
+.bangkok {
+  background-image: url(/image/background-image/bangkokbg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 80px;
+  color: $color-txt;
+}
+
+.bangkok-box {
+  width: 1170px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+.bangkok-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 40px;
+  letter-spacing: 3px;
+}
+
+.bangkok-list {
+  margin: 20px 0;
+}
+
+.bangkok-txt {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.bangkok-txts {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.bangkok-txtt {
+  font-size: 2.0rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+@include media(max, lg) {
+  .bangkok {
+    padding: 40px;
+  }
+
+  .bangkok-txt {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 0;
+  }
+
+  .bangkok-txts {
+    font-size: 1.4rem;
+    font-weight:600;
+  }
+
+  .bangkok-txtt {
+    font-size: 1.6rem;
+  }
+}
+
+@include media(max, sp) {
+  .bangkok {
+    background-image: url(/image/background-image/bangkokbgsp.jpg);
+    padding: 20px 15px;
+  }
+
+  .bangkok-title {
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .bangkok-txt {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 0;
+  }
+
+  .bangkok-txts {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .bangkok-txtt {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+

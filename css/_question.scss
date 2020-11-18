@@ -1,5 +1,162 @@
-
+.question {
+  text-align: center;
+  padding: 40px 10%;
+}
 
 .question-tlt {
   margin-bottom: 40px;
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 40px;
 }
+
+.question-list {
+  width: 1170px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+  text-align: left;
+}
+
+.accodion {
+  margin-bottom: 20px;
+}
+
+.accodion-panel {
+  border-color: #ddd;
+  border: 1px solid #e5e5e5;
+  border: none;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  margin-bottom: 5px;
+}
+
+
+.question-voice {
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #e5e5e5;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    right: 25px;
+    top: 38%;
+    transition: all 0.2s ease-in-out;
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-top: solid 5px #E5E5E5;
+    border-right: solid 5px #E5E5E5;
+    transform: rotate(135deg)
+  }
+}
+
+.open::after {
+  transform: rotate(-45deg);
+  top: 45%;
+}
+
+.question-voice_tlt {
+  font-size: 2.0rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  line-height: 1.1;
+  .fa-question-circle-o {
+    color: #026EA8;
+    position: relative;
+    left: 6px;
+  }
+  a {
+    cursor: pointer;
+    display: block;
+  }
+}
+
+.question-answer {
+  display: none;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.ques-txt {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+@include media(max, lg) {
+  .question {
+    padding: 40px;
+  }
+
+  .question-tlt {
+    font-size: 2.4rem;
+  }
+
+  .question-voice_tlt {
+    font-size: 1.6rem;
+  }
+
+  .ques-txt {
+    font-size: 1.4rem;
+  }
+}
+
+@include media(max, sp) {
+  .question {
+    padding: 20px 15px;
+  }
+
+  .question-tlt {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 40px;
+  }
+
+  .question-list {
+    max-width: 100%;
+  }
+
+  .accodion-panel {
+    border: none;
+  }
+
+  .question-voice {
+    padding: 10px;
+    &::after {
+      content: "";
+      position:absolute;
+      right: 11px;
+      width: 11px;
+      height: 11px;
+      border-top: solid 4px #E5E5E5;
+      border-right: solid 4px #E5E5E5;
+    }
+  }
+
+  .question-voice_tlt {
+    width: calc(100% - 20px);
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: -20px;
+      margin: auto 0;
+      height: 16px;
+    }
+  }
+
+  .ques-txt {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}
+

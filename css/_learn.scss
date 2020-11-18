@@ -1,0 +1,92 @@
+.isara-learn {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.learn-title {
+  margin-bottom: 35px;
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.learn-txt {
+  font-weight: 300;
+  font-size: 2.0rem;
+  margin-bottom: 10px;
+}
+
+.learn-container {
+  width: 860px;
+  max-width: calc(100% - 40px);
+  margin: 40px auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.learn-box {
+  width: 25%;
+  img {
+    width: 180px;
+  }
+}
+
+.teach-txt {
+  font-size:1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+@include media(max,lg) {
+  .learn-title {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+
+  .learn-txt {
+    font-size: 1.6rem;
+  }
+
+  .teach-txt {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+}
+
+@include media(max,sp) {
+  .isara-learn {
+    padding: 20px 0;
+  }
+
+  .learn-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+
+  .learn-txt {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  .learn-container {
+    width: auto;
+    padding: 0 50px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .learn-box {
+    padding: 5px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .teach-txt {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}

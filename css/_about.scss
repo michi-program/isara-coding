@@ -65,6 +65,7 @@
 
 .about-box {
   margin: 30px auto;
+  max-width: calc(100% - 40px);
   width: 1170px;
   padding: 30px;
   background-color: $color-txt;
@@ -80,14 +81,109 @@
 .box {
   display: inline-block;
   padding: 10px;
-  img {
-  width: auto;
-  height: auto;
-  }
 }
 
 .inbox-txt {
   font-size: 1.2rem;
   font-weight: 300;
   margin-top: 5px;
+}
+
+@include media(max,lg) {
+  .about-icon__cycle {
+    font-size: 1.4rem;
+  }
+
+  .about-intitle {
+    margin: 0 auto;
+    position: relative;
+    padding: 10px;
+  }
+
+  .about-intitle {
+    width: 95%;
+  }
+
+  .about-tit__txt {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+
+  .about-txt {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  .about-box {
+    width: 95%;
+  }
+
+  .box-txt {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+}
+
+@include media(max,sp) {
+  .about-icon {
+    top: -30px;
+  }
+
+  .about-icon__cycle {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.2rem;
+  }
+
+  .about-intitle {
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    padding: 10px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .about-tit__txt {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .about-txt {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    font-weight: 600;
+  }
+
+  .about-box {
+    padding: 10px;
+    width: 95%;
+  }
+
+  .box-txt {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .box {
+    padding: 5px;
+    img {
+      height: 30px;
+    }
+  }
+
+  .inbox-txt {
+    font-size: 1rem;
+  }
 }

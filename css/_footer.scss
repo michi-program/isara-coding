@@ -1,0 +1,38 @@
+.footer-wrap {
+  position: relative;
+  padding: 40px 15px 20px 15px;
+  background-color: #ececec;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 1.0rem;
+  font-weight: 300;
+  padding-bottom: 5px;
+  a {
+  color: #337ab7;
+  text-decoration: none;
+  }
+}
+
+.sns-list_footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.twitter-share-button {
+  margin-right: 3px;
+}
+
+@include media(max, lg) {
+
+}
+
+@include media(max, sp) {
+  .footer-wrap {
+    padding: 20px 15px 0 0;
+  }
+
+
+}

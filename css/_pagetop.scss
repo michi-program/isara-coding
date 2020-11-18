@@ -20,3 +20,23 @@
     line-height: 75px;
   }
 }
+
+@include media(max, lg) {
+
+}
+
+@include media(max, sp) {
+  .pagetop {
+    width: 45px;
+    height: 45px;
+    right: 15px;
+    bottom: 20px;
+    a {
+      display:inline-block;
+      width: 100%;
+      height: 100%;
+      font-size: 20px;
+      line-height: 47px;
+    }
+  }
+}

@@ -1,0 +1,146 @@
+.isara-step {
+  background-image: url(/image/background-image/aboutsecondbg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.step-title {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: $color-txt;
+  margin: 20px 0;
+}
+
+.step-txts {
+  margin-bottom: 10px;
+  font-size: 2.0rem;
+  font-weight: 600;
+  color: $color-txt;
+  span {
+    color: $color-main;
+  }
+}
+
+.step-container {
+  width: 70%;
+  margin-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.step-box {
+  background-color: $color-txt;
+  padding: 30px 30px 20px;
+  border-radius: 5px;
+  width: 32%;
+}
+.box-title {
+  text-transform: uppercase;
+  background-color: $color-main;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: $color-txt;
+}
+
+.step-ban__txt {
+  margin: 30px 0 15px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+.step-txt {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+@include media(max,lg) {
+  .step-title {
+    line-height: 3rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+
+  .step-txts {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  .step-container {
+    padding: 0 20%;
+    display: block;
+    width: auto;
+  }
+
+  .step-box {
+    width: 60%;
+    margin: 0 20% 20px;
+  }
+
+  .box-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .step-ban__txt {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+  }
+
+  .step-txt {
+    font-size: 1.4rem;
+  }
+}
+
+@include media(max,sp) {
+  .isara-step {
+    background-image: url(/image/background-image/aboutsecondbgsp.jpg);
+    padding: 30px;
+  }
+
+  .step-title {
+    line-height: 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .step-txts {
+    font-size: 1.3rem;
+    letter-spacing: 0;
+  }
+
+  .step-container {
+    display: block;
+    width: auto;
+  }
+
+  .step-box {
+    width: 100%;
+    margin: 0 auto 15px;
+    padding: 15px 50px;
+  }
+
+  .box-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .step-ban__txt {
+    margin: 15px 0 5px;
+    font-size: 1.2rem;
+  }
+
+  .step-txt {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}

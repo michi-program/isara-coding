@@ -1,0 +1,122 @@
+.isara-really {
+  position: relative;
+  background-color: $color-main;
+  padding: 40px 0;
+  text-align: center;
+  color: $color-txt;
+  &::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: 25px solid transparent;
+    border-top-color: $color-main;
+    top: 100%;
+    left: 50%;
+    margin-left: -25px;
+  }
+}
+
+.circle2 {
+  background-color: $color-txt;
+  color: $color-main;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.really-txt {
+  line-height: 40px;
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin: 0 auto;
+  width:860px;
+  padding: 15px 30px;
+  position: relative;
+  &::before {
+    content:'';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    border-top: 4px solid #fff;
+    border-left: 4px solid #fff;
+}
+  &::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    right: 0;
+    border-bottom: 4px solid #fff;
+    border-right: 4px solid #fff;
+  }
+}
+
+@include media(max,lg) {
+  .circle2 {
+    font-size: 2rem;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+  }
+
+  .really-txt {
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 95%;
+  }
+}
+
+@include media(max,sp) {
+  .isara-really {
+    padding: 20px 0;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 0;
+      width: 0;
+      border: 15px solid transparent;
+      border-top-color: $color-main;
+      top: 100%;
+      left: 50%;
+      margin-left: -15px;
+    }
+  }
+
+  .qa-icon {
+    margin-bottom: 10px;
+  }
+
+  .circle2 {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.2rem;
+  }
+
+  .really-txt {
+    font-size: 1.4rem;
+    margin: 0 auto;
+    position: relative;
+    width: 95%;
+    max-width: calc(100% - 20px);
+    padding: 10px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

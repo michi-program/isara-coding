@@ -1,0 +1,124 @@
+.isara-member {
+  padding: 40px 0;
+  background-image: url(/image/background-image/teacherbg.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: $color-txt;
+}
+
+.member-title {
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.member-txt {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.member-container {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.member-row {
+  margin-right: -15px;
+  margin-left: -15px;
+  display: flex;
+}
+
+.member-box {
+  width: 50%;
+  padding: 0 15px;
+}
+
+.member-image {
+  position: relative;
+  bottom: -35px;
+  border-radius: 50%;
+}
+
+.txt-box {
+  border: 3px solid #fff;
+  padding: 40px;
+}
+
+.in-txt {
+  text-align: left;
+}
+
+.member-box__txt {
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+@include media(max,lg) {
+  .isara-member {
+    padding: 50px;
+  }
+
+  .member-title {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+
+  .member-txt {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .member-container {
+    width: auto;
+  }
+
+  .member-box__txt {
+    font-size: 1.4rem;
+  }
+}
+
+@include media(max,sp) {
+  .isara-member {
+    padding: 20px 0;
+    background-image: url(/image/background-image/teacherbgsp.jpg);
+  }
+
+  .member-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .member-txt {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .member-container {
+    padding: 0 10px;
+  }
+
+  .member-row {
+    display: block;
+  }
+
+  .member-box {
+    width: 100%;
+  }
+
+  .member-image {
+    width: 120px;
+  }
+
+  .txt-box {
+    padding: 40px 10px 10px 10px;
+    height: auto;
+  }
+
+  .member-box__txt {
+    font-size: 1.2rem;
+  }
+}

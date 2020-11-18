@@ -1,0 +1,91 @@
+.tiping-form {
+  background-color: $color-main;
+  text-align: center;
+  padding: 40px 20%;
+}
+
+.form-title {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.form-txt {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  height: 55px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 25px;
+  border: none;
+}
+
+input:nth-child(5) {
+  width: 99%;
+}
+
+textarea {
+  height: 100px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.form-submit__botton {
+  .pink-botton {
+    display: block;
+  background-color: #da6b64;
+  color:$color-txt;
+  padding: 15px 80px;
+  border-radius: 50px;
+  font-size: 2.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 6.5px;
+    &:hover {
+      background-color: #ee564b;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-out;
+    }
+  }
+}
+
+@include media(max, lg) {
+  .tiping-form {
+    padding: 40px 15%;
+  }
+
+  .form-title {
+    font-size: 2.4rem;
+  }
+
+  .font-txt {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+}
+
+@include media(max, sp) {
+  .tiping-form {
+    padding: 20px 15px;
+  }
+
+  .form-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 40px;
+  }
+
+  .form-txt {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}

@@ -14,7 +14,7 @@
   .free-place {
     background-color: #F9F2F4;
     color: #C7264E;
-    font-size: 1.8rem;
+    font-size: 90%;
     padding: 2px 4px;
   }
 }
@@ -37,6 +37,10 @@
   }
 }
 
+.contactbtn {
+  margin-bottom: 10px;
+}
+
 .contact-txts {
   color: #fff;
   font-size: 2.1rem;
@@ -51,45 +55,49 @@
   justify-content: center;
 }
 
-.sns-btn {
-  color: #fff;
-  border-radius: 3px;
-  padding: 5px;
-  cursor: pointer;
-  font-weight: 500;
-  height: 20px;
-  box-sizing: border-box;
-  margin-right: 5px;
-  &:hover {
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
+
+@include media(max,lg) {
+  .big-contact-txt {
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+  }
+
+  .contactbtn {
+    padding: 25px 50px;
+    margin: 10px 80px;
+  }
+
+  .contactbtn-txt {
+    font-size: 1.8rem;
   }
 }
 
-.fa-twitter {
-  height: 14px;
-  width: 14px;
-  display: inline-block;
-  margin-right: 4px;
-}
-
-.tw-btn {
-  background-color: #1C95E0;
-  &:hover {
-    background-color: #09486e;
+@include media(max,sp) {
+  .big-content {
+    padding: 15 0px;
   }
-}
 
-.good-btn {
-  background-color: #1B77F2;
-  &:hover {
-    background-color: #1051a5;
+  .big-contact-txt {
+    font-size: 1.5rem;
+    font-weight: 600;
   }
-}
 
-.share-btn {
-  background-color: #1B77F2;
-  &:hover {
-    background-color: #1051a5;
+  .contactbtn {
+    padding: 15px 20px;
+    margin: 0px 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+
+  .contactbtn-txt {
+    font-size: 2rem;
+    letter-spacing: 0;
+  }
+
+  .contact-txts {
+    font-size: 1.5rem;
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
   }
 }

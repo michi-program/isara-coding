@@ -1,0 +1,197 @@
+.special {
+  background-color: $color-main;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.special-title {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.special-txt {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.special-txt__white {
+  color: #fff;
+}
+
+.special-people {
+  background-color: $color-main;
+  margin: 0 auto;
+  width: 45%;
+  position: relative;
+  bottom: -60px;
+}
+
+.special-people__txt {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.special-box {
+  width: 75%;
+  border: 2px solid #fff;
+  margin-top: 40px;
+  padding: 40px;
+  margin: 40px auto;
+  margin-bottom: 0;
+}
+
+.specialpc {
+  display: flex;
+}
+
+.circlebox {
+  width: 33%;
+  margin: 0 auto;
+}
+
+.tokuten-circle {
+  width: 250px;
+  height: 250px;
+  background-color: $color-txt;
+  margin: 10px;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.tokuten-box {
+  height: 250px;
+  padding: 15px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.tokuten-title {
+  color: $color-main;
+  font-size: 2.4rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.tokuten-txt {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+@include media(max, lg) {
+  .special {
+    padding: 40px;
+  }
+
+  .special-title {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+
+  .special-txt {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .special-people {
+    width: 400px;
+    bottom: -76px;
+  }
+
+  .special-people__txt {
+    font-size: 2.4rem;
+  }
+
+  .special-box {
+    width: auto;
+  }
+
+  .specialpc {
+    display: block;
+  }
+
+
+}
+
+@include media(max, sp) {
+  .special {
+    background-position: center calc(100% + 9px);
+    background-size: 175px auto;
+    padding: 20px 0;
+  }
+
+  .special-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .special-txt {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .special-people {
+    bottom: -37px;
+    width: 250px;
+  }
+
+  .special-people__txt {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .special-box {
+    color: $color-txt;
+    padding: 30px;
+    margin: 0 15px;
+    width: auto;
+  }
+
+  .specialpc {
+    display: none;
+  }
+
+  .specialspbox {
+    margin: 15px 0;
+    display: flex;
+  }
+
+  .specialsp-left {
+    width: 30%;
+    padding: 0;
+    flex: none;
+  }
+
+  .specialsp-circle {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: $color-main;
+    background-color: $color-txt;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+  }
+
+  .specialsp-right {
+    padding: 12px 0;
+    text-align: left;
+  }
+
+  .specialsp-txt {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}
